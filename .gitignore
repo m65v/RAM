@@ -1,1 +1,4 @@
 # must include this file
+
+# For those using JetBrains IDEs
+.idea
