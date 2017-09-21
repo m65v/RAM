@@ -4,6 +4,8 @@
 <head>
     <link type="text/css" rel="stylesheet" href="css/createNode.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Adminstrate Projects</title>
 </head>
 
@@ -34,50 +36,61 @@
 
     <div class="container-fluid text-center">
 
-        <button type="button" class="btn btn-createNode" data-toggle="modal" data-target="#myModal">Create Node</button>
+        <button type="button" class="btn btn-createNode" data-toggle="modal" data-target="#createNodeModal">Create Node</button>
 
-        <div id="myModal" class="modal fade" role="dialog">
+        <!--Modal for adding additional subnodes to current node-->
+        <div class="modal" id="createNodeModal" data-easein="slideUpIn" tabindex="-1" role="dialog" aria-labelledby="costumModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
-
-                <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Create Node</h4>
                     </div>
+
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="inputNodeName">Node Name</label>
+                                <input class="form-control" placeholder="Node name" type="text" id="inputNodeName">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNodeDesc">Node Description</label>
+                                <textarea class="form-control" rows="1" placeholder="Node description" type="text" id="inputNodeDesc"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNodePerson">Add people to node</label>
+                                <select multiple class="form-control" id="sel1">
+                                    <option>Person 1</option>
+                                    <option>Person 2</option>
+                                    <option>Person 3</option>
+                                    <option>Person 4</option>
+                                    <option>Person 5</option>
+                                    <option>Person 6</option>
+                                    <option>Person 7</option>
+                                    <option>Person 8</option>
+                                    <option>Person 9</option>
+                                    <option>Person 10</option>
+                                    <option>Person 11</option>
+                                    <option>Person 12</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" data-dismiss="modal">Save</button>
+                        <!--TODO: Add a function that saves data to DB from form-->
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <!--Modal for adding additional subnodes to current node
-            <div class="modal fade" id="createNodeModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title">Create Node</h4>
-                        </div>
-
-                        <div class="modal-body">
-                           <p>hejsan</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary">Save</button>
-                            <button class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
     </div>
 
 
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
+    <script src="js/supportLibrary.js"></script>
 
 
 

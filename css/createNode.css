@@ -24,3 +24,7 @@
       }
       .row.content {height:auto;}
     }
+
+    #inputNodeDesc{
+        line-height: 100px;
+    }
