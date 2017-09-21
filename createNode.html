@@ -59,6 +59,30 @@
                                 <textarea class="form-control" rows="1" placeholder="Node description" type="text" id="inputNodeDesc"></textarea>
                             </div>
                             <div class="form-group">
+                                <label for="inputNodeType">Select Node Type</label>
+                                <select class="form-control" id="sel1">
+                                    <option>Node type 1</option>
+                                    <option>Node type 2</option>
+                                    <option>Node type 3</option>
+                                    <option>Node type 4</option>
+                                </select>
+                                <br>
+                                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#createNodeCollapse">Create Type</button>
+                                <div class="collapse" id="createNodeCollapse">
+                                    <form>
+                                        <div class="form-group">
+                                            <br>
+                                            <label for="inputNodeName">Type Name</label>
+                                            <input class="form-control" placeholder="Type name" type="text" id="inputNodeName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputNodeDesc">Type Description</label>
+                                            <textarea class="form-control" rows="1" placeholder="Type description" type="text" id="inputNodeDesc"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label for="inputNodePerson">Add people to node</label>
                                 <select multiple class="form-control" id="sel1">
                                     <option>Person 1</option>
@@ -85,6 +109,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 
 
