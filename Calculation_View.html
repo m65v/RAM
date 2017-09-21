@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/Calculation_View.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Project Calculations</title>
 
 	</head>
-	<body>
 
-
-<!--
-		<nav  class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-
-  
-    <a  href="http://www.volvo.com" > 
-    <img style="position:absolute; left:5%; "  src="img/Volvo-logo.png" class="img-circle" alt="userImage" width="50" height="50">
-  </a>
-      <a style="position:absolute; left:10%; " class="navbar-brand" href="#"> <strong> RAM </strong> </a>
-    </div>
-    <ul class="nav navbar-nav">
-     <p style="position:absolute; margin-top:1%; right:15%;"> <strong> Hello,   </strong></p>
-      <li style="position:absolute;top:0; right:50px;" ><a href="#">Log Out</a></li>
-    </ul>
-  </div>
-</nav>
--->
-
-
-
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-
+  <body>
+<!-- this is a comment -->
+<div class="container-fluid text-center">
+  <!--<div class="row content">-->
     <div class="col-sm-2 sidenav">
-      <p>My Projects </p>
+
+      <div class="dropdown">
+
+  <button onclick="myFunction()" class="dropbtn">Project Reviews</button>
+
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Incoming Reviews</a>
+    <a href="#">Outgoing Reviews</a>
+    <a href="#">Link 3</a>
+  </div>
+      </div>
+
+<!-- this is the list of incoming reviews, should be scrollable -->
+
+      <ol>
+        <li><a href="#">Test Project 1</a></li>
+        <li><a href="#">Test project 2</a></li>
+        <li><a href="#">Test Project 3</a></li>
+      </ol>
 
       <p><br><a href="#">Test Project 1</a></p>
       <p><br><a href="#">Test project 2</a></p>
       <p><br><a href="#">Test Project 3</a></p>
 
-
-      <p><a href="#"><br><br>Add a new project</a></p>
     </div>
 
 
 
-    <div class="col-sm-8 text-left"> 
+    <div class="col-sm-8 text-left">
       <h4>Project Name: </h4>
       <h4><br>Start of Production: </h4>
       <h4><br>Project Milestones<br><br></h4>
@@ -54,13 +49,13 @@
 
       <h4><br><br><br>Description</h4>
       <textarea class="form-control" id="exampleTextarea" readonly rows="4">Original description of project</textarea>
-		
+
       <script>
       	function hey(){
     		document.getElementById('exampleTextarea').readOnly = false;
     		return false;
       	}
-      	
+
       </script>
 
 
@@ -121,9 +116,9 @@
   </div>
 </div>
 
+  <script src="js/Support_Library.js"></script>
 
 
 
-	
 	</body>
 </html>
